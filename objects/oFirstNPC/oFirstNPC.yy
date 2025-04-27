@@ -10,8 +10,8 @@
   "name":"oFirstNPC",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Level_1",
+    "path":"folders/Objects/Level_1.yy",
   },
   "parentObjectId":{
     "name":"oNPCParent",
