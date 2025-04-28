@@ -11,7 +11,10 @@ if(eclipseBegin && global.eclipseCount < -250)
 {
 	audio_stop_all();
 	playFinishLevelSound();
-	room_goto(rmStart);
+	room_goto(rmHospital);
+	eclipseBegin = false;
+	global.eclipseCount = 255;
+	shakeMagn = 0;
 
 }
 

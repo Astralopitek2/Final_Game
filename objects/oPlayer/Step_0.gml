@@ -35,7 +35,7 @@ if(keyboard_check_pressed(vk_space))
 
 
 
-if(keyboard_check(ord("C")))
+if(keyboard_check(ord("C")) && room == rmLevel1)
 {
 	var gamemode = instance_find(oGameMode,0);
 	if(instance_exists(gamemode))
