@@ -96,6 +96,8 @@ function UpdatePlayerMovement()
 	
 }
 
+playingFootSteps = false;
+
 function UpdateAnimation() 
 {
 	
@@ -110,10 +112,20 @@ function UpdateAnimation()
 	    case ord("S"): sprite_index = sPlayer_Walk_Fwd; break;
 	}
 	
+	if(playingFootSteps != true)
+	{
+		playingFootSteps = true;
+		audio_play_sound(sound_Footsteps, 1, 1);
+	}
+	
 	if(vsp == 0 && hsp == 0)
 	{
 		image_index = 0;
+		audio_stop_sound(sound_Footsteps);
+		playingFootSteps = false;
 	}
+	
+
 	
 }
 
